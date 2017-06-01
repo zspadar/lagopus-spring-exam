@@ -60,7 +60,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
 - The list of projects will be the highly awaited titles of the actual projects you will work on in the project phase :)
 - The response format should be the following:
 {"projectList":[{"id":1,"nameOfProject":"Porject 1"},{"id":2,"nameOfProject":"Project 2"}, ...]}
-- You should send an HTTP request to this endpoint and "https://springexamserver.herokuapp.com/projects/*** "
+- You should send an HTTP request to this endpoint "https://springexamserver.herokuapp.com/projects/***" and make it as the response of the POST endpoint 
 - Here `***` goes the name of your class
 
 ## Question time!
