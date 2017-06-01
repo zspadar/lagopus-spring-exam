@@ -44,7 +44,8 @@ Your task is to create a RESTful quiz application with full of greenfox question
     {"id": 2, "question": "When was Green Fox founded?(yyyy.mm.)"},
     ...
     ]
-}```
+}
+```
 
 - Below you can find some more question and answer example, please add them all to the database, to one table:
     - When did your course start? (yyyy.mm.dd)(2017.03.13)
@@ -71,7 +72,8 @@ Your task is to create a RESTful quiz application with full of greenfox question
   {"id": 2, "answer": "2015.09."},
   ...
     ]
-  }```
+  }
+  ```
   
 - Regarding the response, continue reading
 
@@ -86,7 +88,8 @@ Your task is to create a RESTful quiz application with full of greenfox question
     {"id":2,"nameOfProject":"Project 2"},
      ...
    ]
-}```
+}
+```
 - You should send an HTTP request to this endpoint "https://springexamserver.herokuapp.com/projects/className" and make it as the response of the POST endpoint
 - Instead of `"className"` goes the name of your class
 
