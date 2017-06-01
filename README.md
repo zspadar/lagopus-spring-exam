@@ -36,6 +36,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
 - Create a `GET /questions` endpoint
 - Get 5 random questions in JSON object from an SQL database that you create
 - the JSON object should be:
+
 ```json
 {
   "id": 1, "questions":[
@@ -44,6 +45,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
     ...
     ]
 }```
+
 - Below you can find some more question and answer example, please add them all to the database, to one table:
     - When did your course start? (yyyy.mm.dd)(2017.03.13)
     - What type of dog Barbi has? (Whippet)
@@ -61,6 +63,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
 - Make sure that the user answers to exactly that 5 questions
 - In order to do this you should make the randomly recevied questions persistent
 - This endpoint should receive the following input
+
 ```json
 {
   "id": 1, "answers":[
@@ -69,6 +72,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
   ...
     ]
   }```
+  
 - Regarding the response, continue reading
 
 ### Response of POST endpoint
