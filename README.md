@@ -35,7 +35,15 @@ Your task is to create a RESTful quiz application with full of greenfox question
 
 - Create a `GET /questions` endpoint
 - Get 5 random questions in JSON object from an SQL database that you create
-- the JSON object should be: `{"questions":[{"id": 1, "question": "What is the color code of Green Fox?"}, {"id": 2, "question": "When was Green Fox founded?(yyyy.mm.)"}, ...]}`
+- the JSON object should be:
+```json
+{
+  "id": 1, "questions":[
+    {"id": 1, "question": "What is the color code of Green Fox?"},
+    {"id": 2, "question": "When was Green Fox founded?(yyyy.mm.)"},
+    ...
+    ]
+}```
 - Below you can find some more question and answer example, please add them all to the database, to one table:
     - When did your course start? (yyyy.mm.dd)(2017.03.13)
     - What type of dog Barbi has? (Whippet)
@@ -52,16 +60,34 @@ Your task is to create a RESTful quiz application with full of greenfox question
 - Post the answers to the 5 random questions
 - Make sure that the user answers to exactly that 5 questions
 - In order to do this you should make the randomly recevied questions persistent
-- This endpoint should receive the following input `{"answers":[{"id": 1, "answer": "#3CB879"}, {"id": 2, "answer": "2015.09."}, ...]}`
+- This endpoint should receive the following input
+```json
+{
+  "id": 1, "answers":[
+  {"id": 1, "answer": "#3CB879"},
+  {"id": 2, "answer": "2015.09."},
+  ...
+    ]
+  }```
 - Regarding the response, continue reading
 
 ### Response of POST endpoint
 - In the case that all of the given answers are **CORRECT** you should get a list of projects in this endpoint
 - The list of projects will be the highly awaited titles of the actual projects you will work on in the project phase :)
 - The response format should be the following:
-{"projectList":[{"id":1,"nameOfProject":"Porject 1"},{"id":2,"nameOfProject":"Project 2"}, ...]}
-- You should send an HTTP request to this endpoint "https://springexamserver.herokuapp.com/projects/***" and make it as the response of the POST endpoint 
-- Here `***` goes the name of your class
+```json
+{
+  "projectList":[
+    {"id":1,"nameOfProject":"Porject 1"},
+    {"id":2,"nameOfProject":"Project 2"},
+     ...
+   ]
+}```
+- You should send an HTTP request to this endpoint "https://springexamserver.herokuapp.com/projects/className" and make it as the response of the POST endpoint
+- Instead of `"className"` goes the name of your class
+
+### Endpoint TESTing
+- Create 2 endpoint tests 
 
 ## Question time!
 
