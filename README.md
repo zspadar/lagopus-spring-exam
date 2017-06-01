@@ -68,9 +68,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
 ### In what cases would you choose to use an abstract class over an interface?
 
 Please define it with your own words. We are expecting at least 3 distinct ideas that you write here:
--
--
--
+
 
 ### Analyzing URL
 Please name the parts of the URL below.
