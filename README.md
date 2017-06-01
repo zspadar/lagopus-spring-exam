@@ -39,11 +39,12 @@ Your task is to create a RESTful quiz application with full of greenfox question
 
 ```json
 {
-  "id": 1, "questions":[
+  "id": 1, 
+  "questions":[
     {"id": 1, "question": "What is the color code of Green Fox?"},
     {"id": 2, "question": "When was Green Fox founded?(yyyy.mm.)"},
     ...
-    ]
+   ]
 }
 ```
 
@@ -67,12 +68,13 @@ Your task is to create a RESTful quiz application with full of greenfox question
 
 ```json
 {
-  "id": 1, "answers":[
+  "id": 1, 
+  "answers":[
   {"id": 1, "answer": "#3CB879"},
   {"id": 2, "answer": "2015.09."},
   ...
     ]
-  }
+ }
   ```
   
 - Regarding the response, continue reading
