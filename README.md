@@ -63,7 +63,6 @@ Your task is to create a RESTful quiz application with full of greenfox question
 - Create a `POST /answers` endpoint
 - Post the answers to the 5 random questions
 - Make sure that the user answers to exactly that 5 questions
-- In order to do this you should make the randomly recevied questions persistent
 - This endpoint should receive the following input
 
 ```json
