@@ -39,7 +39,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
 
 ```json
 {
-  "id": 1, 
+  "id": 1,
   "questions":[
     {"id": 1, "question": "What is the color code of Green Fox?"},
     {"id": 2, "question": "When was Green Fox founded?(yyyy.mm.)"},
@@ -67,7 +67,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
 
 ```json
 {
-  "id": 1, 
+  "id": 1,
   "answers":[
   {"id": 1, "answer": "#3CB879"},
   {"id": 2, "answer": "2015.09."},
@@ -75,11 +75,12 @@ Your task is to create a RESTful quiz application with full of greenfox question
     ]
  }
   ```
-  
+
 - Regarding the response, continue reading
 
 ### Response of POST endpoint
 - In the case that all of the given answers are **CORRECT** you should get a list of projects in this endpoint
+- In case some of the answers are **not** correct you should get back an empty list
 - The list of projects will be the highly awaited titles of the actual projects you will work on in the project phase :)
 - The response format should be the following:
 ```json
@@ -95,7 +96,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
 - Instead of `"className"` goes the name of your class
 
 ### Endpoint TESTing
-- Create 2 endpoint tests 
+- Create 2 endpoint tests
 
 ## Question time!
 
