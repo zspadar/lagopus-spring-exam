@@ -53,8 +53,8 @@ Your task is to create a RESTful quiz application with full of greenfox question
     - What type of dog Barbi has? (Whippet)
     - What is HerrNorbert's favourite color? (Green)
     - How many classes are learning at Green Fox Academy at this moment? (4)
-    - How many mentors does the Green Fox have? (16)
-    - What was the name of the first Green Fox Class? (Velox)
+    - How many mentors teaches at Green Fox at this moment? (16)
+    - What was the name of the first Green Fox Class? (Vulpes)
     - How many likes do we have on facebook? (~3300)
     - What is Tojas's horoscope? (Libra)
 - Feel free to add some new, if you have the time
@@ -72,8 +72,8 @@ Your task is to create a RESTful quiz application with full of greenfox question
   {"id": 1, "answer": "#3CB879"},
   {"id": 2, "answer": "2015.09."},
   ...
-    ]
- }
+  ]
+}
   ```
 
 - Regarding the response, continue reading
@@ -96,7 +96,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
 - Instead of `"className"` goes the name of your class
 
 ### Endpoint TESTing
-- Create 2 endpoint tests
+- Create 2 endpoint tests all together or per endpoint.
 
 ## Question time!
 
