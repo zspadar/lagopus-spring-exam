@@ -53,8 +53,8 @@ Your task is to create a RESTful quiz application with full of greenfox question
     - What type of dog Barbi has? (Whippet)
     - What is HerrNorbert's favourite color? (Green)
     - How many classes are learning at Green Fox Academy at this moment? (4)
-    - How many mentors teaches at Green Fox at this moment? (16)
-    - What was the name of the first Green Fox Class? (Vulpes)
+    - How many mentors teach at Green Fox at this moment? (16)
+    - What was the name of the first Green Fox class? (Vulpes)
     - How many likes do we have on facebook? (~3300)
     - What is Tojas's horoscope? (Libra)
 - Feel free to add some new, if you have the time
@@ -62,7 +62,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
 ### Give the answer
 - Create a `POST /answers` endpoint
 - Post the answers to the 5 random questions
-- Make sure that the user answers to exactly that 5 questions
+- Make sure that the user answers to exactly the 5 random questions that he/she got
 - This endpoint should receive the following input
 
 ```json
@@ -94,6 +94,8 @@ Your task is to create a RESTful quiz application with full of greenfox question
 ```
 - You should send an HTTP request to this endpoint "https://springexamserver.herokuapp.com/projects/className" and make it as the response of the POST endpoint
 - Instead of `"className"` goes the name of your class
+- If you got to this point you probably noticed that the project names are encrypted
+- Use Base64 to decode the names http://www.rgagnon.com/javadetails/java-0598.html
 
 ### Endpoint TESTing
 - Create 2 endpoint tests all together or per endpoint.
