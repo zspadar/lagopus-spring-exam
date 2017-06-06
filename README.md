@@ -105,6 +105,13 @@ Your task is to create a RESTful quiz application with full of greenfox question
 ### In what cases would you choose to use an abstract class over an interface?
 
 Please define it with your own words. We are expecting at least 3 distinct ideas that you write here:
+First, let's clarify, what is an abstarct class: it is a class, that reprezents a generalization and provides functionality but it is only intended to be extended and not be instatiated. It is a superclass. A class can only extend  one absrtact class.
+
+
+An interface is a completly abstarct class that defines a protocol for object interactions.
+Interfaces can extend other interfaces, a class can implement any number of interfaces.
+
+If  there would be  dogs, cats, tigers, fish, men, women, klingons, vulcanis. For human, animal and alienSpieces, I would use an abstract class for each one. However all animals, humans and alien spices eat, drink, so I would do an interface for drinking and eating.
 
 
 ### Analyzing URL
