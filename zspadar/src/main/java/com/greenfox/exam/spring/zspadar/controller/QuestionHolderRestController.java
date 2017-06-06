@@ -22,17 +22,20 @@ public class QuestionHolderRestController {
   RandomQuestionRepository randomQuestionRepository;
 
   RandomQuestions randomQuestions;
+  Question question;
 
 
   @GetMapping(value = "/questions")
   public RandomQuestions getFiveRandomQuestions() {
 
+
     List<Question> wholeList = (List<Question>) questionRepository.findAll();
     Collections.shuffle(wholeList);
-    List<Question> firstFiveOfShuffled = wholeList.subList(0,5);
-    RandomQuestions randomQuestions = (RandomQuestions) firstFiveOfShuffled;
+//    List<Question> firstFiveOfShuffled = wholeList.subList(0,5);
+//    RandomQuestions randomQuestions = (RandomQuestions) firstFiveOfShuffled;
 
-    return new RandomQuestions(firstFiveOfShuffled);
+
+    return new RandomQuestions(wholeList.subList(0,5));
   }
 
 }

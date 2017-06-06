@@ -1,5 +1,6 @@
 package com.greenfox.exam.spring.zspadar.model;
 
+import java.util.ArrayList;
 import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,7 +13,7 @@ import lombok.Setter;
 @Setter
 public class RandomQuestions {
   private int id;
-  private List<RandomQuestion> questions;
+  private List<RandomQuestion> questions = new ArrayList<>();
 
   public RandomQuestions(List<Question> questions) {
     for(Question question : questions) {
@@ -20,5 +21,6 @@ public class RandomQuestions {
     }
     this.id = 1;
   }
+
 
 }
