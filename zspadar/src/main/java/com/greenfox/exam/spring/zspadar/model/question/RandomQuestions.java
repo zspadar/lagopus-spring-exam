@@ -1,4 +1,4 @@
-package com.greenfox.exam.spring.zspadar.model;
+package com.greenfox.exam.spring.zspadar.model.question;
 
 import java.util.ArrayList;
 import java.util.List;

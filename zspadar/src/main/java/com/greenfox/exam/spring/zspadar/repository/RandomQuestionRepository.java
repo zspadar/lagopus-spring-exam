@@ -1,6 +1,6 @@
 package com.greenfox.exam.spring.zspadar.repository;
 
-import com.greenfox.exam.spring.zspadar.model.RandomQuestion;
+import com.greenfox.exam.spring.zspadar.model.question.RandomQuestion;
 import org.springframework.data.repository.CrudRepository;
 
 /**

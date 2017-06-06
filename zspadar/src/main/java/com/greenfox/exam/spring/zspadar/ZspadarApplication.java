@@ -1,7 +1,7 @@
 package com.greenfox.exam.spring.zspadar;
 
-import com.greenfox.exam.spring.zspadar.model.Answer;
-import com.greenfox.exam.spring.zspadar.model.Question;
+import com.greenfox.exam.spring.zspadar.model.answer.Answer;
+import com.greenfox.exam.spring.zspadar.model.question.Question;
 import com.greenfox.exam.spring.zspadar.repository.AnswerRepository;
 import com.greenfox.exam.spring.zspadar.repository.QuestionRepository;
 import com.greenfox.exam.spring.zspadar.repository.RandomQuestionRepository;

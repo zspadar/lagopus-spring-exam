@@ -1,8 +1,7 @@
-package com.greenfox.exam.spring.zspadar.model;
+package com.greenfox.exam.spring.zspadar.model.answer;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.Getter;
@@ -12,23 +11,20 @@ import lombok.Setter;
  * Created by zsuzsanna.padar on 2017. 06. 06..
  */
 @Entity
-@Table(name = "randomAnswer")
+@Table(name = "answer")
 @Getter
 @Setter
-public class RandomAnswer {
-
+public class Answer {
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue
   private Long id;
 
   private String answer;
 
-  public RandomAnswer() {
+  public Answer() {
   }
 
-  public RandomAnswer(Long id, String answer) {
-    this.id = id;
+  public Answer(String answer) {
     this.answer = answer;
   }
-
 }
