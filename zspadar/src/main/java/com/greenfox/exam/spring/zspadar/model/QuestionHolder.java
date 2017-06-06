@@ -1,5 +1,6 @@
 package com.greenfox.exam.spring.zspadar.model;
 
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,13 +21,17 @@ public class QuestionHolder {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
-  private Iterable<Question> questions;
+  private String questions;
 
-  public QuestionHolder(Iterable<Question> questions) {
-    this.questions = questions;
+  public QuestionHolder(Question questions) {
+    this.questions = questions.getQuestion();
   }
 
   public QuestionHolder() {
+  }
+
+  public QuestionHolder(List<Question> questions) {
+    this.questions = String.join(", ", String.valueOf(questions));
   }
 
 }

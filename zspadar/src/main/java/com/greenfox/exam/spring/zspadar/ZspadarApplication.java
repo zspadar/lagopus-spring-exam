@@ -34,7 +34,9 @@ public class ZspadarApplication implements CommandLineRunner{
 		questionRepository.save(new Question("How many likes do we have on facebook?"));
 		questionRepository.save(new Question("What is Tojas's horoscope?"));
 
-		questionHolderRepository.save(new QuestionHolder(questionRepository.findAll()));
+
+
+		questionHolderRepository.save(new QuestionHolder((Question) questionHolderRepository.findAll()));
 	}
 
 }
