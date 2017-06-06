@@ -1,6 +1,7 @@
 package com.greenfox.exam.spring.zspadar;
 
 import com.greenfox.exam.spring.zspadar.model.Question;
+import com.greenfox.exam.spring.zspadar.model.QuestionHolder;
 import com.greenfox.exam.spring.zspadar.repository.QuestionHolderRepository;
 import com.greenfox.exam.spring.zspadar.repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,8 @@ public class ZspadarApplication implements CommandLineRunner{
 		questionRepository.save(new Question("What was the name of the first Green Fox class?"));
 		questionRepository.save(new Question("How many likes do we have on facebook?"));
 		questionRepository.save(new Question("What is Tojas's horoscope?"));
+
+		questionHolderRepository.save(new QuestionHolder())
 	}
-	
+
 }
