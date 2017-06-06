@@ -1,11 +1,9 @@
 package com.greenfox.exam.spring.zspadar.controller;
 
-import com.greenfox.exam.spring.zspadar.model.Question;
 import com.greenfox.exam.spring.zspadar.model.QuestionHolder;
+import com.greenfox.exam.spring.zspadar.model.RandomQuestions;
 import com.greenfox.exam.spring.zspadar.repository.QuestionHolderRepository;
 import com.greenfox.exam.spring.zspadar.repository.QuestionRepository;
-import java.util.Collections;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,12 +18,14 @@ public class QuestionHolderRestController {
   @Autowired
   QuestionHolderRepository questionHolderRepository;
 
+  RandomQuestions randomQuestions;
+
   @GetMapping(value = "/questions")
   public QuestionHolder getFiveRandomQuestions() {
-    List<Question> wholeList = (List<Question>) questionRepository.findAll();
-    Collections.shuffle(wholeList);
-    List<Question> firstFiveOfShuffled = wholeList.subList(0,5);
-    return new QuestionHolder(firstFiveOfShuffled);
+//    List<Question> wholeList = (List<Question>) questionRepository.findAll();
+//    Collections.shuffle(wholeList);
+//    List<Question> firstFiveOfShuffled = wholeList.subList(0,5);
+    return new QuestionHolder(randomQuestions);
   }
 
 }

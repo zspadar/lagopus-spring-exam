@@ -12,23 +12,22 @@ import lombok.Setter;
  * Created by zsuzsanna.padar on 2017. 06. 06..
  */
 @Entity
-@Table(name = "QuestionHolder")
+@Table(name = "randomQuestion")
 @Getter
 @Setter
-public class QuestionHolder {
+public class RandomQuestion {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
-  private RandomQuestions questions;
+  private String question;
 
-  public QuestionHolder(RandomQuestions questions) {
-    this.questions = questions;
+  public RandomQuestion(Long id, String question) {
+    this.id = id;
+    this.question = question;
   }
 
-  public QuestionHolder() {
+  public RandomQuestion() {
   }
-
-
 
 }
