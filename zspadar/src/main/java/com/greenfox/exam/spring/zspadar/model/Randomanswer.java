@@ -30,5 +30,5 @@ public class RandomAnswer {
     this.id = id;
     this.answer = answer;
   }
-  
+
 }
