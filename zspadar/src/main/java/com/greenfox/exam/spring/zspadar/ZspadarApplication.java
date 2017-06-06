@@ -1,6 +1,8 @@
 package com.greenfox.exam.spring.zspadar;
 
+import com.greenfox.exam.spring.zspadar.model.Answer;
 import com.greenfox.exam.spring.zspadar.model.Question;
+import com.greenfox.exam.spring.zspadar.repository.AnswerRepository;
 import com.greenfox.exam.spring.zspadar.repository.QuestionRepository;
 import com.greenfox.exam.spring.zspadar.repository.RandomQuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,9 +15,11 @@ public class ZspadarApplication implements CommandLineRunner{
 	@Autowired
 	QuestionRepository questionRepository;
 
-
 	@Autowired
   RandomQuestionRepository randomQuestionRepository;
+
+	@Autowired
+  AnswerRepository answerRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ZspadarApplication.class, args);
@@ -33,6 +37,20 @@ public class ZspadarApplication implements CommandLineRunner{
 		questionRepository.save(new Question("What was the name of the first Green Fox class?"));
 		questionRepository.save(new Question("How many likes do we have on facebook?"));
 		questionRepository.save(new Question("What is Tojas's horoscope?"));
+
+		answerRepository.save(new Answer("green"));
+		answerRepository.save(new Answer("2016.03"));
+		answerRepository.save(new Answer("2017.03.13"));
+		answerRepository.save(new Answer("Whippet"));
+		answerRepository.save(new Answer("Green"));
+		answerRepository.save(new Answer("4"));
+		answerRepository.save(new Answer("16"));
+		answerRepository.save(new Answer("Vulpes"));
+		answerRepository.save(new Answer("~3300"));
+		answerRepository.save(new Answer("Libra"));
+
+
+
 
 	}
 
