@@ -44,10 +44,9 @@ public class ZspadarApplication implements CommandLineRunner{
 		List<Question> wholeList = (List<Question>) questionRepository.findAll();
     Collections.shuffle(wholeList);
     List<Question> firstFiveOfShuffled = wholeList.subList(0,5);
-    randomQuestionsRepository.save(firstFiveOfShuffled.get(1))
 
-////    Collections.shuffle(wholeList);
-////    List<Question> firstFiveOfShuffled = wholeList.subList(0,5);
+
+
 
 
 

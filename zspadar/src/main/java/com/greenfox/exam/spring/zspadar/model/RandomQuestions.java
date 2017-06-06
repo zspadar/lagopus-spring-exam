@@ -19,9 +19,6 @@ public class RandomQuestions {
       this.questions.add(new RandomQuestion(question.getId(), question.getQuestion()));
     }
     this.id = 1;
-
-
-
-
   }
+  
 }

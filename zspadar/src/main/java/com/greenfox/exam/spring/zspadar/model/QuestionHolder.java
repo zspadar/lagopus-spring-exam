@@ -20,9 +20,9 @@ public class QuestionHolder {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
-  private RandomQuestions questions;
+  private RandomQuestion questions;
 
-  public QuestionHolder(RandomQuestions questions) {
+  public QuestionHolder(RandomQuestion questions) {
     this.questions = questions;
   }
 
