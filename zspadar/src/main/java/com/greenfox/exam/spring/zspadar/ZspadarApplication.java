@@ -1,12 +1,8 @@
 package com.greenfox.exam.spring.zspadar;
 
 import com.greenfox.exam.spring.zspadar.model.Question;
-import com.greenfox.exam.spring.zspadar.model.RandomQuestions;
-import com.greenfox.exam.spring.zspadar.repository.QuestionHolderRepository;
 import com.greenfox.exam.spring.zspadar.repository.QuestionRepository;
-import com.greenfox.exam.spring.zspadar.repository.RandomQuestionsRepository;
-import java.util.Collections;
-import java.util.List;
+import com.greenfox.exam.spring.zspadar.repository.RandomQuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -17,12 +13,9 @@ public class ZspadarApplication implements CommandLineRunner{
 	@Autowired
 	QuestionRepository questionRepository;
 
-	@Autowired
-	QuestionHolderRepository questionHolderRepository;
 
 	@Autowired
-  RandomQuestionsRepository randomQuestionsRepository;
-	RandomQuestions randomQuestions;
+  RandomQuestionRepository randomQuestionRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ZspadarApplication.class, args);
@@ -41,19 +34,6 @@ public class ZspadarApplication implements CommandLineRunner{
 		questionRepository.save(new Question("How many likes do we have on facebook?"));
 		questionRepository.save(new Question("What is Tojas's horoscope?"));
 
-		List<Question> wholeList = (List<Question>) questionRepository.findAll();
-    Collections.shuffle(wholeList);
-    List<Question> firstFiveOfShuffled = wholeList.subList(0,5);
-
-
-
-
-
-
-
-
-
-		;
 	}
 
 }

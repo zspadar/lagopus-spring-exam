@@ -27,6 +27,7 @@ public class RandomQuestion {
     this.question = question;
   }
 
+
   public RandomQuestion() {
   }
 

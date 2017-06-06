@@ -20,5 +20,5 @@ public class RandomQuestions {
     }
     this.id = 1;
   }
-  
+
 }
